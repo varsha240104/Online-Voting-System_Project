@@ -1,0 +1,49 @@
+
+<!-- saved from url=(0058)http://localhost/online-voting-system/routes/dashboard.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Online voting system - Dashboard</title>
+        <link rel="stylesheet" href="./Online voting system - Dashboard_files/stylesheet.css">
+    </head>
+    <body>
+        
+            <center>
+            <div id="headerSection">
+            <a href="http://localhost/online-voting-system/"><button id="back-button"> Back</button></a>
+            <a href="http://localhost/online-voting-system/routes/logout.php"><button id="logout-button">Logout</button></a>
+            <h1>Online Voting System</h1>  
+            </div>
+            </center>
+            <hr>
+
+            <div id="mainSection">
+                <div id="profileSection">
+                    <center><img src="./Online voting system - Dashboard_files/g.jpg" height="100" width="100"></center><br>
+                    <b>Name : </b>ritu<br><br>
+                    <b>Mobile : </b>6262157509<br><br>
+                    <b>Address : </b>bhopal<br><br>
+                    <b>Status : </b><b style="color: green">Voted</b>                </div>
+                <div id="groupSection">
+                                                    <div style="border-bottom: 1px solid #bdc3c7; margin-bottom: 10px">
+                                <img style="float: right" src="./Online voting system - Dashboard_files/k.jpg" height="80" width="80">
+                                <b>Group Name : </b>Varsha Mamoriya    23I5094<br><br>
+                                <b>Votes :</b> 3<br><br>
+                                <form method="POST" action="http://localhost/online-voting-system/api/vote.php">
+                                <input type="hidden" name="gvotes" value="3">
+                                <input type="hidden" name="gid" value="14">
+                                                                    <button disabled="" style="padding: 5px; font-size: 15px; background-color: #27ae60; color: white; border-radius: 5px;" type="button">Voted</button>
+                                                                    </form>
+                                </div>
+                                                            <div style="border-bottom: 1px solid #bdc3c7; margin-bottom: 10px">
+                                <img style="float: right" src="./Online voting system - Dashboard_files/sp.jpg" height="80" width="80">
+                                <b>Group Name : </b>sarita<br><br>
+                                <b>Votes :</b> 1<br><br>
+                                <form method="POST" action="http://localhost/online-voting-system/api/vote.php">
+                                <input type="hidden" name="gvotes" value="1">
+                                <input type="hidden" name="gid" value="16">
+                                                                    <button disabled="" style="padding: 5px; font-size: 15px; background-color: #27ae60; color: white; border-radius: 5px;" type="button">Voted</button>
+                                                                    </form>
+                                </div>
+                                            </div>
+            </div> 
+    
+</body></html>
